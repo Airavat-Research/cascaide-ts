@@ -1,0 +1,37 @@
+{
+  "name": "@cascaide-ts/postgres-js",
+  "version": "0.5.1",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "postgres": "^3.4.0",
+    "@cascaide-ts/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@cascaide-ts/core": "workspace:*",
+    "postgres": "^3.4.0",
+    "tsup": "^8.0.0"
+  }
+}

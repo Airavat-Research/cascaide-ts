@@ -1,0 +1,19 @@
+{
+  "name": "cascaide-ts",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "turbo": "latest",
+    "typescript": "^5.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "yaml": "^2.4.2"
+    }
+  }
+}

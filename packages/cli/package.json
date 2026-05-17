@@ -1,0 +1,31 @@
+{
+  "name": "create-cascaide-app",
+  "version": "0.1.2",
+  "description": "CLI for cascaide-ts project scaffolding",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "type": "module",
+  "bin": {
+    "cascaide": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+
+  "dependencies": {
+    "@clack/prompts": "latest",
+    "commander": "latest",
+    "degit": "^2.8.4",
+    "figlet": "^1.10.0",
+    "gradient-string": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^25.3.2",
+    "tsup": "latest",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

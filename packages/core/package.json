@@ -1,0 +1,46 @@
+{
+  "name": "@cascaide-ts/core",
+  "version": "0.5.1",
+  "license": "MIT", 
+  "files": [
+    "dist",
+    "LICENSE",  
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "^2.0.0",
+    "reselect": "^5.0.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@reduxjs/toolkit": "^2.0.0",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.1",
+    "@typescript-eslint/parser": "^8.58.1",
+    "eslint": "^10.2.0",
+    "reselect": "^5.0.0",
+    "ts-prune": "^0.10.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0", 
+    "uuid": "^13.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+  "@cascaide-ts/core": ["packages/core/src/index.ts"],
+  "@cascaide-ts/react": ["packages/react/src/index.ts"],
+  "@cascaide-ts/postgres-js": ["packages/postgres-js/src/index.ts"],
+  "@cascaide-ts/cli": ["packages/cli/src/index.ts"],
+  "@cascaide-ts/server-next": ["packages/server-next/src/index.ts"],
+  "@cascaide-ts/server-hono": ["packages/server-hono/src/index.ts"],
+  "@cascaide-ts/server-fastify": ["packages/server-fastify/src/index.ts"],
+  "@cascaide-ts/server-express": ["packages/server-express/src/index.ts"]
+}
+  },
+  "files": [],
+
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/react" },
+    { "path": "packages/postgres-js" },
+    { "path": "packages/cli" },
+    { "path": "packages/server-next" },
+    { "path": "packages/server-hono" },
+    { "path": "packages/server-fastify" },
+    { "path": "packages/server-express" }
+  ]
+}

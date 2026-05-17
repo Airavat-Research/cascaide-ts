@@ -1,0 +1,46 @@
+{
+  "name": "@cascaide-ts/react",
+  "version": "0.5.1",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "@cascaide-ts/core": "workspace:*",
+    "react-redux": "^9.0.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@cascaide-ts/core": "workspace:*",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-redux": "^9.2.0",
+    "@reduxjs/toolkit": "^2.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0",
+    "uuid": "^13.0.0"
+  }
+}

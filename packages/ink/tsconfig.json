@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "jsx": "react-jsx",
+    "composite": false,
+    "baseUrl": ".",
+    "paths": {
+      "@cascaide-ts/core": ["../core/dist/index.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"], // Ensure .tsx is here!
+  "exclude": ["node_modules", "dist"]
+}

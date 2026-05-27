@@ -13,7 +13,7 @@ function createPassThroughStreamControl(passThrough: PassThrough) {
     writeRaw: async (data: string) => void passThrough.write(data),
     close: async () => {
       passThrough.end();
-      resolveWorkflowDone();
+      resolveWorkflowDone();  
     },
   };
 
